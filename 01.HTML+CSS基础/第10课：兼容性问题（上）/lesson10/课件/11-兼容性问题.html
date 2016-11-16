@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<style>
+.box{border:10px solid #000; width:600px; float:left;}
+.box div{width:100px; height:100px; background:red; margin:20px; border:5px solid #33F; float:left;display:inline;}
+
+/*
+	当一行子元素占用的宽度之和和父级的宽度相差超过3px，
+	或者有不满一行状态的时候，最后一行子元素的下margin在IE6下就会失效
+	
+	解决方法: Meiyou
+*/
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+	<div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+
+    
+    
+    
+</div>
+
+
+</body>
+</html>

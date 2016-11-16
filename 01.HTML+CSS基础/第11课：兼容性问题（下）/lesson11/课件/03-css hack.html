@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.box{width:100px; height:100px; background:Red; background:blue\9;
+	 +background:yellow; _background:green;
+}
+/*css hack chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0){ .box{background:pink;}}
+
+
+/*
+	css hack:
+		\9:	IE10之前的IE浏览器解析
+		+ *: IE7包含IE7之前的浏览器解析
+		_  ： IE6包含IE6之前的浏览器解析
+*/
+
+</style>
+
+</head>
+
+<body>
+<div class="box"></div>
+
+</body>
+</html>
